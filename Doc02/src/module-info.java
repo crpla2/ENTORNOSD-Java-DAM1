@@ -1,0 +1,2 @@
+module Doc02 {
+}

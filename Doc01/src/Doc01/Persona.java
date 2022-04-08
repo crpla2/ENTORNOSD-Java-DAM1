@@ -1,4 +1,7 @@
 package Doc01;
+
+import java.util.Date;
+
 /**
  * Clase Persona para crear objetos que hacen referencia a personas
  * 
@@ -12,6 +15,8 @@ public class Persona {
 	
 	private int edad;
 	private String nombre;
+	private Date fecha;
+	
 	/**
 	 * Método constructor con los parámetros edad (entero) y nombre (String)
 	 * @param edad es un entero y de momento no controlamos nada.
@@ -44,11 +49,25 @@ public class Persona {
 		return nombre;
 	}
 	/**
-	 * Método que da valor a l atributo nombre pasado por parámetro.
+	 * Método que da valor al atributo nombre pasado por parámetro.
 	 * @param nombre como un String.
 	 */
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
+	}
+	/**
+	 * Método que devuelve la fecha de nacimiento de la persona
+	 * @return
+	 */
+	public Date getFecha() {
+		return fecha;
+	}
+	/**
+	 * Metodo que recibe un parametro del tipo Date y reemplaza la fecha de nacimiento con dicho dato.
+	 * @param fecha de tipo Date.
+	 */
+	public void setFecha(Date fecha) {
+		this.fecha = fecha;
 	}
 	/**
 	 * Método para mostrar por pantalla los datos de la persona.
